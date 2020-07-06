@@ -1,0 +1,17 @@
+.container
+  h3 Instagram Ruby parser
+  = form_with url: parse_path, class: "form-group" do |f|
+    = f.text_field :location_id, placeholder: "location id"
+    = f.number_field :number_of_pages, min: 1, placeholder: "number of pages", class: "ml-2"
+    = f.submit "Parse", class: "ml-2 btn btn-primary", style: "height: 34px"
+    - if @users.any?
+      h4.mt-2 Users
+      table.table
+        thead.thead-dark
+          tr
+            th scope="col"  Username
+            th scope="col"  Location
+          tbody.users_list
+            = render @users
+      .d-flex.justify-content-center
+        = will_paginate @users, renderer: WillPaginate::ActionView::BootstrapLinkRenderer

@@ -1,0 +1,10 @@
+table.table
+  thead.thead-dark
+    tr
+      th scope="col"  Username
+      th scope="col"  Location
+    tbody.users_list
+      - users.each do |user|
+        = render "user", user: user
+- if users.current_page < users.total_pages
+  = link_to "Load more", root_path(page: users.next_page), class: "btn btn-sm btn-primary m-1 float-right load_more", remote: true
