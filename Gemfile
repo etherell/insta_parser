@@ -10,16 +10,16 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
-gem 'sidekiq', '~> 6.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'nokogiri', '~> 1.10', '>= 1.10.9'
 gem 'slim', '~> 4.1'
 gem 'will_paginate', '~> 3.3'
 gem 'will_paginate-bootstrap4', '~> 0.2.2'
+gem 'httparty', '~> 0.18.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'pry', '~> 0.13.1'
+  gem 'pry-nav', '~> 0.3.0'
 end
 
 group :development do
