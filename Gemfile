@@ -11,7 +11,7 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'nokogiri', '~> 1.10', '>= 1.10.9'
+gem 'nokogiri', '~> 1.12'
 gem 'slim', '~> 4.1'
 gem 'will_paginate', '~> 3.3'
 gem 'will_paginate-bootstrap4', '~> 0.2.2'
