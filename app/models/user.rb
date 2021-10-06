@@ -5,5 +5,5 @@ class User < ApplicationRecord
   validates :location, presence: true
   validates_uniqueness_of :username, scope: :location
 
-  self.per_page = 20
+  self.per_page = 15
 end
