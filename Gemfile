@@ -15,7 +15,7 @@ gem 'nokogiri', '~> 1.10', '>= 1.10.9'
 gem 'slim', '~> 4.1'
 gem 'will_paginate', '~> 3.3'
 gem 'will_paginate-bootstrap4', '~> 0.2.2'
-gem 'httparty', '~> 0.18.1'
+gem 'httparty', '~> 0.21.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
